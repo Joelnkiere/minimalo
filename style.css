@@ -81,3 +81,23 @@ nav a:hover {
   font-size: 0.9rem;
   padding: 5px 0;
 }
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
