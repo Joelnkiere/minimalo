@@ -71,3 +71,9 @@ img{
 .text{
     text-align: center;
 }
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
