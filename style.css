@@ -6,13 +6,20 @@ body{
 .header{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+.header-sticky{
+   margin-bottom: 50px;
+}
+.padding{
+    padding: 10px 50px;
 }
 .contact{
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
+
     height: 40px;
 }
 .droite{
@@ -29,5 +36,38 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+
+}
+.navigation-list{
+display:flex;
+flex-direction: row;
+list-style: none;
+gap: 30px;
+padding: 0;
+margin: 0;
+}
+.navigation-list li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.notification{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.text{
+    text-align: center;
 }
