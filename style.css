@@ -105,7 +105,9 @@ img {
     height: 20px;
 }
 
-/* Desktop (min-width: 1025px) */
+/* RESPONSIVE DESIGN */
+
+/* Desktop */
 @media (min-width: 1025px) {
     .header .padding {
         padding: 10px 80px;
