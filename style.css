@@ -1,79 +1,271 @@
-body{
+/* Reset et styles de base */
+body {
     margin: 0;
     padding: 0;
-
+    font-family: Arial, sans-serif;
 }
-.header{
+
+/* Styles généraux */
+.header {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.header-sticky{
-   margin-bottom: 50px;
+
+.header-sticky {
+    margin-bottom: 50px;
 }
-.padding{
+
+.padding {
     padding: 10px 50px;
 }
-.contact{
+
+.contact {
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     height: 40px;
 }
-.droite{
+
+.gauche p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.droite {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.droite a{
+
+.droite a {
     text-decoration: none;
     color: white;
+    font-size: 14px;
 }
-.navigation{
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
 
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
-.navigation-list{
-display:flex;
-flex-direction: row;
-list-style: none;
-gap: 30px;
-padding: 0;
-margin: 0;
-}
-.navigation-list li a{
+
+.navigation-list li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
     font-size: 18px;
 }
-.social{
+
+.social {
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
 }
-.notification{
+
+.notification {
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
 }
-img{
-    width: 20px;
-    height: 20px;
-}
-.text{
-    text-align: center;
-}
-.icons{
+
+.icons {
     display: flex;
     flex-direction: row;
     gap: 30px;
     align-items: center;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .header .padding {
+        padding: 10px 80px;
+    }
+
+    .header .text h1 {
+        font-size: 3rem;
+    }
+
+    .header .navigation-list {
+        gap: 40px;
+    }
+
+    .header .navigation-list li a {
+        font-size: 20px;
+    }
+}
+
+/* Tablette (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header .padding {
+        padding: 10px 30px;
+    }
+
+    .header .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header .navigation-list {
+        gap: 25px;
+    }
+
+    .header .navigation-list li a {
+        font-size: 17px;
+    }
+
+    .header .icons {
+        gap: 20px;
+    }
+
+    .header .social {
+        gap: 15px;
+    }
+
+    .header .notification {
+        gap: 15px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .header .padding {
+        padding: 8px 15px;
+    }
+
+    .header .contact {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .header .gauche p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .header .droite {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header .droite a {
+        font-size: 12px;
+    }
+
+    .header .text h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .header .navigation {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .header .navigation-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .header .navigation-list li a {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    .header .icons {
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header .social {
+        gap: 15px;
+    }
+
+    .header .notification {
+        gap: 15px;
+    }
+}
+
+/* Petit mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .header .padding {
+        padding: 5px 10px;
+    }
+
+    .header .text h1 {
+        font-size: 1.6rem;
+        margin: 15px 0;
+    }
+
+    .header .navigation {
+        gap: 15px;
+    }
+
+    .header .navigation-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header .navigation-list li a {
+        font-size: 14px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .header .icons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header .social {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header .notification {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header img {
+        width: 22px;
+        height: 22px;
+    }
 }
